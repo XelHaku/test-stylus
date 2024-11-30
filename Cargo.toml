@@ -9,12 +9,14 @@ keywords = ["arbitrum", "ethereum", "stylus", "alloy"]
 description = "Stylus hello world example"
 
 [dependencies]
-alloy-primitives = "=0.7.6"
-alloy-sol-types = "=0.7.6"
-mini-alloc = "0.4.2"
-stylus-sdk = "=0.7.0-beta.0"
+alloy-primitives = { version = "=0.7.6", default-features = false }
+alloy-sol-types = { version = "=0.7.6", default-features = false }
+stylus-sdk = { version = "=0.6.0", default-features = false }
+openzeppelin-stylus = "0.1.1"
 hex = "0.4.3"
 dotenv = "0.15.0"
+mini-alloc = "0.4.2"
+
 
 [dev-dependencies]
 tokio = { version = "1.12.0", features = ["full"] }
@@ -38,3 +40,5 @@ strip = true
 lto = true
 panic = "abort"
 opt-level = "s"
+
+
